@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laufzeitrechner_Sicherung</title>
+    <link href="style.css" rel="stylesheet"> 
+    <script src="Sicherung_script.js"></script>
+
+    
+   
+
+   
+</head>
+<body>
+   
+  <form onsubmit="calculateGesamtlaufzeit(); return false;">
+
+    <h1>Laufzeitrechner</h1>
+
+    <input id="gesamtmenge" required typ="text" placeholder="Gesamtmenge eingeben (Bspl.:2000)">
+    <input id="laenge" required typ="text" placeholder="Länge eingeben in mm (Bsp.: 6500)">
+    <input id="kavität" required typ="text" placeholder="Kavität eingeben (Bspl.: 40)">
+    <input id="laufgeschwindigkeit" required typ="text" placeholder="Laufgeschwindigkeit eingeben (Bsp.: 0.30)">
+    <input id="leistungProStunde" typ="text" placeholder="Leistung pro Stunde wird gerechnet">
+    <input id="gesamtlaenge" typ="text" placeholder="Gesamtlänge wird gerechnet">
+    <input id="gesamtlafzeit" typ="text" placeholder="Gesamtlaufzeit wird gerechnet">
+    <input id="gesamtlafzeitInTagen" typ="text" placeholder="Gesamtlaufzeit in Tagen  wird gerechnet">
+    
+    
+    
+    <div> 
+        <button  class="berechnenButton">Berechnen</button>
+    <button  onclick ="resetData()" class="resetButton">Reset</button>
+    </div>
+    <label class = "ZeitansichtLabel">Zeitansicht</label>
+    
+    
+
+<div class="zeitansicht">
+<div class="kopfbereich">
+  <!-- Kopfbereich der Tage -->
+</div>
+<div class="tage-container">
+  <!-- Tage werden hier dynamisch generiert -->
+</div>
+<div class="laufbalken"></div>
+</div>
+
+</form>
+
+</body>
+</html>

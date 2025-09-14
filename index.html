@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laufzeitrechner</title>
+    <link href="style.css" rel="stylesheet"> 
+    <script src="script.js"></script>
+
+    
+   
+
+   
+</head>
+<body>
+   
+    
+    <form onsubmit="calculateGesamtlaufzeit(); return false;">
+
+      <h1>Laufzeitrechner</h1>
+      <!-- <div class="wrapper"> -->
+            <div class = "inputContainer">
+            <input id="gesamtmenge" required typ="text" placeholder="Gesamtmenge eingeben (Bspl.:2000)">
+            <input id="laenge" required typ="text" placeholder="Länge eingeben in mm (Bsp.: 6500)">
+            <input id="kavität" required typ="text" placeholder="Kavität eingeben (Bspl.: 40)">
+            <input id="laufgeschwindigkeit" required typ="text" placeholder="Laufgeschwindigkeit eingeben (Bsp.: 0.30)">
+
+            <!-- Neue Felder für Materialkostenberechnung -->
+            <input id="materialpreis"  type="text" placeholder="Materialpreis pro Kilo (Bsp.: 2.10)">
+            <input id="verbrauchProMeter"  type="text" placeholder="Materialverbrauch g/meter (Bsp.: 240)">
+            </div>
+
+            <div class = "inputContainer">
+            <input id="leistungProStunde" typ="text" placeholder="Leistung pro Stunde wird gerechnet">
+            <input id="gesamtlaenge" typ="text" placeholder="Gesamtlänge wird gerechnet">
+            <input id="gesamtlafzeit" typ="text" placeholder="Gesamtlaufzeit wird gerechnet">
+            <input id="gesamtlafzeitInTagen" typ="text" placeholder="Gesamtlaufzeit in Tagen  wird gerechnet">
+            <input id="materialkosten" type="text" placeholder="Materialkosten werden berechnet">
+
+          </div>
+      <!-- </div> -->
+        
+        
+        
+        <div class="button-container"> 
+            <button  class="berechnenButton">Berechnen</button>
+        <button  onclick ="resetData()" class="resetButton">Reset</button>
+        </div>
+        <label class = "ZeitansichtLabel">Zeitansicht</label>
+        
+        
+
+<div class="zeitansicht">
+    <div class="kopfbereich">
+      <!-- Kopfbereich der Tage -->
+    </div>
+    <div class="tage-container">
+      <!-- Tage werden hier dynamisch generiert -->
+    </div>
+    <div class="laufbalken"></div>
+  </div>
+  
+    </form>
+
+   
+    
+</body>
+</html>
