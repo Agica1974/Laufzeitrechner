@@ -62,7 +62,9 @@ input{
    font-size: clamp(1em, 2.8vw, 1.5em);
     width: 90%;
     height: 22px;
+    background-color: #fff;
     padding: 10px;
+    text-align: center;
     border-radius: 6px;
     box-shadow: 5px 5px 5px #012c31 ;
 }
@@ -95,6 +97,9 @@ input{
 
 }
 /* Zeitsansicht */
+.zeitansichtLabel {
+  margin-top: 8rem;
+}
 .zeitansicht {
     width: 99.5%;
     height: 90px; /* Anpassen der Höhe nach Bedarf */
@@ -103,7 +108,7 @@ input{
     border-style: solid; /* Stil des Borders */
     border-color: rgb(46, 49, 46); /* Farbe des Borders */
     position: relative;
-    margin-top: 5rem;
+    margin-top: 8rem;
   }
   
   .kopfbereich {
