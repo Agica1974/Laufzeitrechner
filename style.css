@@ -58,6 +58,14 @@ input{
     border-radius: 6px;
     box-shadow: 5px 5px 5px #012c31 ;
 }
+#ergebnisseLabel {
+   font-size: clamp(1em, 2.8vw, 1.5em);
+    width: 90%;
+    height: 22px;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 5px 5px 5px #012c31 ;
+}
 
 .button-container {
     display: flex;
