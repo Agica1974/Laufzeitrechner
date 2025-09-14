@@ -33,7 +33,7 @@ form {
 .wrapper {
   display: flex;
   justify-content: space-between;
-  width: 50%;
+  max-width: 70%;
 }
 
 .inputContainer {
@@ -97,9 +97,11 @@ input{
 
 }
 /* Zeitsansicht */
+
 .zeitansichtLabel {
   margin-top: 8rem;
 }
+
 .zeitansicht {
     width: 99.5%;
     height: 90px; /* Anpassen der Höhe nach Bedarf */
