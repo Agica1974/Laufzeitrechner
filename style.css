@@ -103,7 +103,7 @@ input{
     border-style: solid; /* Stil des Borders */
     border-color: rgb(46, 49, 46); /* Farbe des Borders */
     position: relative;
-    
+    margin-top: 5rem;
   }
   
   .kopfbereich {
