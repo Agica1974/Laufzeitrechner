@@ -33,13 +33,13 @@ form {
 .wrapper {
   display: flex;
   justify-content: space-between;
-  max-width: 70%;
+  width: 70%;
 }
 
 .inputContainer {
   display:flex;
   flex-direction: column;
-  width: 50%;
+  width: 47%;
   gap:18px;
   padding-top: 22px;
   padding-bottom: 22px;
